@@ -6,24 +6,52 @@ namespace assignment_one
     {
         static void Main(string[] args)
         {
+            bool running = true;
+            while(running){
+                
+                Welcome();
+
+                Console.Write("Your Name: ");
+                String owner = Console.ReadLine();
+
+                Console.Write("Dogs name: ");
+                String dogName = Console.ReadLine();
+                
+                double dogWeight = getWeight();
+
+                int daysOfStay =  getDays();
+
+                char serviceCode = getServiceCode();
+
+                Estimate estimate = new Estimate(owner, dogName, dogWeight, daysOfStay, serviceCode);
+
+                Console.Clear();
+                Console.WriteLine(estimate.ToString());
+
+                running =  NewEstimate();
+
+
+            }
+        }
+        //Welcome module
+        public static void Welcome(){
+            Console.Clear();
             Console.WriteLine("Welcome to the MPLS Dog Boarding estimate calculator!");
             Console.WriteLine("\nPlease complete the following form:");
-            Console.Write("Your Name: ");
-            String owner = Console.ReadLine();
+        }
 
-            Console.Write("Dogs name: ");
-            String dogName = Console.ReadLine();
-            
-            double dogWeight = getWeight();
-
-            int daysOfStay =  getDays();
-
-            char serviceCode = getServiceCode();
-
-            Estimate estimate = new Estimate(owner, dogName, dogWeight, daysOfStay, serviceCode);
-
-            Console.WriteLine(estimate.ToString());
-
+        //Ending Module - A recursive method to see if the user needs to make
+        // another estimate or wants to end the program
+        public static bool NewEstimate(){
+            Console.WriteLine("Would you like to make another estimate? (Y/N)");
+            string input = Console.ReadLine();
+            if(input.ToUpper() == "Yes" || input.ToUpper() == "Y"){
+                return true;
+            }else if(input.ToUpper() == "No" || input.ToUpper() == "N"){
+                return false;
+            }else{
+                return NewEstimate();
+            }
         }
         //A recursive method for making sure the user inputs a number for the dogs weight
         public static double getWeight(){
