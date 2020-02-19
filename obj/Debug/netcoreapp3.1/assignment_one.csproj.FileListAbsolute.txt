@@ -1,0 +1,11 @@
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\bin\Debug\netcoreapp3.1\assignment_one.exe
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\bin\Debug\netcoreapp3.1\assignment_one.deps.json
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\bin\Debug\netcoreapp3.1\assignment_one.runtimeconfig.json
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\bin\Debug\netcoreapp3.1\assignment_one.runtimeconfig.dev.json
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\bin\Debug\netcoreapp3.1\assignment_one.dll
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\bin\Debug\netcoreapp3.1\assignment_one.pdb
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\obj\Debug\netcoreapp3.1\assignment_one.csprojAssemblyReference.cache
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\obj\Debug\netcoreapp3.1\assignment_one.AssemblyInfoInputs.cache
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\obj\Debug\netcoreapp3.1\assignment_one.AssemblyInfo.cs
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\obj\Debug\netcoreapp3.1\assignment_one.dll
+C:\code\Prog_Fund\AH_assignment_one\mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw\obj\Debug\netcoreapp3.1\assignment_one.pdb
