@@ -14,12 +14,12 @@ namespace assignment_one{
 
         string owner;
         string dogName;
-        string dogWeight;
+        double dogWeight;
         int daysOfStay;
         char serviceAddOnCode;
         double totalEstimate;
 
-        public Estimate(string owner, string dogName, string dogWeight, int daysOfStay, char serviceAddOnCode, double totalEstimate)
+        public Estimate(string owner, string dogName, double dogWeight, int daysOfStay, char serviceAddOnCode)
         {
             this.owner = owner;
             this.dogName = dogName;
@@ -31,11 +31,11 @@ namespace assignment_one{
 
         public double estimateCost(int days, char serviceCode){
             if(serviceCode == 'N'){
-                return 75.00;
+                return 75.00 * days;
             }else if(serviceCode == 'A'){
-                return 169.00;
+                return 169.00 * days;
             }else if(serviceCode == 'C'){
-                return 112.00;
+                return 112.00 * days;
             }else{
                 throw new System.ArgumentException("not a valid service add-on code");
             }
@@ -43,7 +43,9 @@ namespace assignment_one{
 
         public override string ToString()
         {
-            return base.ToString();
+            string cost = this.totalEstimate.ToString("c");
+            string description = $"\nHello {this.owner}, \n\n{this.dogName} will be staying with us for {this.daysOfStay} days. \n{this.dogName} is {this.dogWeight} pounds and will be receiving \nthe {this.serviceAddOnCode} level service add-on. \n\nCost Estimate: {cost}\n";
+            return description;
         }
     }
 
