@@ -25,6 +25,7 @@ namespace assignment_one
             Console.WriteLine(estimate.ToString());
 
         }
+        //A recursive method for making sure the user inputs a number for the dogs weight
         public static double getWeight(){
             
             Console.Write("Dogs wieght: ");
@@ -37,6 +38,7 @@ namespace assignment_one
                 return getWeight();
             }
         }
+        //A recursive method for making sure the user inputs a number for the number of days stayed
         public static int getDays(){
             
             Console.Write("Number of days dog will stay: ");
@@ -49,12 +51,14 @@ namespace assignment_one
                 return getDays();
             }
         }
+        // A recursive method for making sure the user inputs either 'N', 'A', or 'C' for the
+        //   service add-on code. 
         public static char getServiceCode(){
             
             Console.Write("Service add on: ");
             var input = Console.ReadLine();
             try{
-                char code = Convert.ToChar(input);
+                char code = Convert.ToChar(input.ToUpper());
                 if(code != 'N' && code != 'A' && code != 'C'){
                     throw new System.Exception();
                 }else{

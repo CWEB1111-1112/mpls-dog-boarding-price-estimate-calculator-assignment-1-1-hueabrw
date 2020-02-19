@@ -4,6 +4,7 @@
     Description: This is the estimate class that is used to create an estimate 
       price of boarding a users dog. This is part of the MPLSDogBoarding.com website.
     Repository: https://github.com/CWEB1111-1112/mpls-dog-boarding-price-estimate-calculator-assignment-1-1-hueabrw
+
 */
 using System;
 
@@ -11,6 +12,10 @@ using System;
 namespace assignment_one{
 
     class Estimate{
+
+        private const double NTYPE = 75.00;
+        private const double ATYPE = 169.00;
+        private const double CTYPE = 112.00;
 
         protected string owner {get; set;}
         protected string dogName {get; set;}
@@ -28,19 +33,19 @@ namespace assignment_one{
             this.serviceAddOnCode = serviceAddOnCode;
             this.totalEstimate = estimateCost(this.daysOfStay, this.serviceAddOnCode);
         }
-
+        //The calculator for the estimate as well as some error handling.
         public double estimateCost(int days, char serviceCode){
             if(serviceCode == 'N'){
-                return 75.00 * days;
+                return NTYPE * days;
             }else if(serviceCode == 'A'){
-                return 169.00 * days;
+                return ATYPE * days;
             }else if(serviceCode == 'C'){
-                return 112.00 * days;
+                return CTYPE * days;
             }else{
                 throw new System.ArgumentException("not a valid service add-on code");
             }
         }
-
+        // A ToString method describing the estimate information and showing the total estimate cost.
         public override string ToString()
         {
             string cost = this.totalEstimate.ToString("c");
