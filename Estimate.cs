@@ -12,12 +12,12 @@ namespace assignment_one{
 
     class Estimate{
 
-        string owner;
-        string dogName;
-        double dogWeight;
-        int daysOfStay;
-        char serviceAddOnCode;
-        double totalEstimate;
+        protected string owner {get; set;}
+        protected string dogName {get; set;}
+        protected double dogWeight {get; set;}
+        protected int daysOfStay {get; set;}
+        protected char serviceAddOnCode {get; set;}
+        protected double totalEstimate {get; set;}
 
         public Estimate(string owner, string dogName, double dogWeight, int daysOfStay, char serviceAddOnCode)
         {
