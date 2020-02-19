@@ -6,7 +6,12 @@ namespace assignment_one
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to the MPLS Dog Boarding estimate calculator!");
+            Console.WriteLine("\nPlease complete the following form:");
+            Console.Write("Your Name: ");
+            Console.ReadLine();
+            Console.Write("Dogs name: ");
+
         }
     }
 }
