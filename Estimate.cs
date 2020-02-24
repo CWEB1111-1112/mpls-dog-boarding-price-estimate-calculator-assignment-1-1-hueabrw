@@ -49,7 +49,7 @@ namespace assignment_one{
         public override string ToString()
         {
             string cost = this.totalEstimate.ToString("c");
-            string description = $"\nHello {this.owner}, \n\n{this.dogName} will be staying with us for {this.daysOfStay} days. \n{this.dogName} is {this.dogWeight} pounds and will be receiving \nthe {this.serviceAddOnCode} level service add-on. \n\nCost Estimate: {cost}\n";
+            string description = $"\nHello {this.owner}, \n\nThank you for your interest in MPLS dog boarding. \nJust to confirm, {this.dogName} will be staying with us \nfor {this.daysOfStay} days. {this.dogName} is {this.dogWeight} pounds and will be \nreceiving the {this.serviceAddOnCode} level service add-on. \n\nCost Estimate: {cost}\n";
             return description;
         }
     }
